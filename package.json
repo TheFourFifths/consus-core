@@ -1,7 +1,7 @@
 {
   "name": "consus-flux",
   "description": "Flux modules for the Consus project",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "The Four Fiths",
   "contributors": [
     "Jordan Longato",
@@ -14,7 +14,8 @@
   "scripts": {
     "build": "grunt build",
     "prepublish": "grunt prepublish",
-    "test": "grunt test"
+    "test": "grunt test",
+    "lint": "grunt lint"
   },
   "repository": {
     "type": "git",
