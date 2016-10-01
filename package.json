@@ -10,6 +10,7 @@
     "Tony Fay",
     "Trevin Hofmann <trevinhofmann@gmail.com>"
   ],
+  "license": "Unlicense",
   "main": ".dist/index.js",
   "scripts": {
     "build": "grunt build",
