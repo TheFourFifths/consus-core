@@ -72,7 +72,7 @@ describe('Dispatcher', () => {
 
     describe('#handleAction', () => {
 
-        it('should handle an action', () => {
+        it('should handle actions', () => {
             let spyA = sinon.spy();
             let spyB = sinon.spy();
             Dispatcher.register(spyA);
@@ -80,6 +80,9 @@ describe('Dispatcher', () => {
             Dispatcher.handleAction({});
             assert.isTrue(spyA.calledOnce);
             assert.isTrue(spyB.calledOnce);
+            Dispatcher.handleAction({});
+            assert.isTrue(spyA.calledTwice);
+            assert.isTrue(spyB.calledTwice);
         });
 
     });
