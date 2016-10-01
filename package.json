@@ -1,0 +1,42 @@
+{
+  "name": "consus-flux",
+  "description": "Flux modules for the Consus project",
+  "version": "0.1.1",
+  "author": "The Four Fiths",
+  "contributors": [
+    "Jordan Longato",
+    "Matthew Mahnke",
+    "Quentin Caffero",
+    "Tony Fay",
+    "Trevin Hofmann <trevinhofmann@gmail.com>"
+  ],
+  "main": ".dist/index.js",
+  "scripts": {
+    "build": "grunt build",
+    "prepublish": "grunt prepublish",
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheFourFifths/consus-flux"
+  },
+  "bugs": {
+    "url": "https://github.com/TheFourFifths/consus-flux/issues"
+  },
+  "keywords": [
+    "consus",
+    "flux",
+    "the four fifths"
+  ],
+  "devDependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-babel": "^6.0.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-mocha-cli": "^2.1.0",
+    "sinon": "^1.17.6"
+  }
+}
