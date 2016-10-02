@@ -1,5 +1,7 @@
 # consus-flux
 
+[![Build Status](https://travis-ci.org/TheFourFifths/consus-flux.svg?branch=master)](https://travis-ci.org/TheFourFifths/consus-flux)
+
 Flux modules for the Consus project
 
 ## Installing
