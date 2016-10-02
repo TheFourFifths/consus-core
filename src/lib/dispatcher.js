@@ -57,6 +57,7 @@ class Dispatcher {
      * Pass an action to the dispatcher which will be sent to listeners
      */
     handleAction(action) {
+        this.calledListeners = Object.create(null);
         this.currentAction = action;
         Object.keys(this.listeners).forEach(dispatchToken => this.callListener(dispatchToken));
     }
