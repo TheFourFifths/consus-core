@@ -1,6 +1,7 @@
 # consus-flux
 
 [![Build Status](https://travis-ci.org/TheFourFifths/consus-flux.svg?branch=master)](https://travis-ci.org/TheFourFifths/consus-flux)
+[![codecov](https://codecov.io/gh/TheFourFifths/consus-flux/branch/master/graph/badge.svg)](https://codecov.io/gh/TheFourFifths/consus-flux)
 
 Flux modules for the Consus project
 
@@ -74,3 +75,4 @@ setTimeout(() {
 * `npm test`: Run the test suite
 * `npm run lint`: Run the linter
 * `npm run build`: Build the usable `.dist` directory
+* `npm run coverage`: Generate a code coverage report
