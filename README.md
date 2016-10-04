@@ -70,6 +70,21 @@ setTimeout(() {
 
 ## Developing
 
+### Getting Started
+
+```bash
+# Clone the repository
+git clone git@github.com:TheFourFifths/consus-flux.git
+# Enter the project directory
+cd consus-flux
+# Install dependencies
+npm install
+# Build the project
+npm run build
+# Run the test suite
+npm test
+```
+
 # Development scripts
 
 * `npm test`: Run the test suite
