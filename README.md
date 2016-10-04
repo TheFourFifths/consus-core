@@ -91,3 +91,10 @@ npm test
 * `npm run lint`: Run the linter
 * `npm run build`: Build the usable `.dist` directory
 * `npm run coverage`: Generate a code coverage report
+
+### Project File Structure
+
+* `src`: The project's source code
+* `test`: The project's tests
+    * `lib`: Miscellaneous library modules
+    * `unit`: Unit tests
