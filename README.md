@@ -85,7 +85,7 @@ npm run build
 npm test
 ```
 
-# Development scripts
+### Development Scripts
 
 * `npm test`: Run the test suite
 * `npm run lint`: Run the linter
