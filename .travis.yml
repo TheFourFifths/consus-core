@@ -5,11 +5,13 @@ node_js:
 
 install:
   - npm install
+
 script:
   - npm test
 
 after_success:
   - npm run coverage
+  - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   email: false
