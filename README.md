@@ -16,7 +16,7 @@ Flux modules for the Consus project
 import { Dispatcher } from 'consus-flux';
 
 Dispatcher.handleAction({
-    actionType: 'INCREMENT',
+    type: 'INCREMENT',
     data: {
         amount: 5
     }
@@ -71,9 +71,31 @@ setTimeout(() {
 
 ## Developing
 
-# Development scripts
+### Getting Started
+
+```bash
+# Clone the repository
+git clone git@github.com:TheFourFifths/consus-flux.git
+# Enter the project directory
+cd consus-flux
+# Install dependencies
+npm install
+# Build the project
+npm run build
+# Run the test suite
+npm test
+```
+
+### Development Scripts
 
 * `npm test`: Run the test suite
 * `npm run lint`: Run the linter
 * `npm run build`: Build the usable `.dist` directory
 * `npm run coverage`: Generate a code coverage report
+
+### Project File Structure
+
+* `src`: The project's source code
+* `test`: The project's tests
+    * `lib`: Miscellaneous library modules
+    * `unit`: Unit tests
