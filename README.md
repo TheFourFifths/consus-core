@@ -1,7 +1,7 @@
 # consus-flux
 
 [![Build Status](https://travis-ci.org/TheFourFifths/consus-flux.svg?branch=dev)](https://travis-ci.org/TheFourFifths/consus-flux)
-[![codecov](https://codecov.io/gh/TheFourFifths/consus-flux/branch/master/graph/badge.svg)](https://codecov.io/gh/TheFourFifths/consus-flux)
+[![codecov](https://codecov.io/gh/TheFourFifths/consus-flux/branch/dev/graph/badge.svg)](https://codecov.io/gh/TheFourFifths/consus-flux)
 [![devDependency Status](https://david-dm.org/TheFourFifths/consus-flux/dev-status.svg)](https://david-dm.org/TheFourFifths/consus-flux?type=dev)
 
 Flux modules for the Consus project
