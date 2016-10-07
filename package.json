@@ -32,6 +32,7 @@
     "the four fifths"
   ],
   "devDependencies": {
+    "babel-eslint": "^7.0.0",
     "babel-plugin-istanbul": "^2.0.1",
     "babel-preset-es2015": "^6.16.0",
     "babel-register": "^6.16.3",
@@ -42,7 +43,7 @@
     "grunt-babel": "^6.0.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
     "grunt-mocha-cli": "^2.1.0",
     "nyc": "^8.3.0",
     "sinon": "^1.17.6"

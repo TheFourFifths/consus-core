@@ -52,7 +52,7 @@ describe('Dispatcher', () => {
             let spyA = sinon.spy();
             let spyB = sinon.spy();
             let tokenA = Dispatcher.register(spyA);
-            let tokenB = Dispatcher.register(spyB);
+            Dispatcher.register(spyB);
             Dispatcher.currentAction = {};
             Dispatcher.waitFor(tokenA);
             assert.isTrue(spyA.calledOnce);
