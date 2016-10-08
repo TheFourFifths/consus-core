@@ -42,6 +42,7 @@ module.exports = function(grunt) {
             }
         },
         clean: {
+            coverage: ['coverage/', 'coverage.lcov', '.nyc_output/'],
             dist: ['.dist/'],
             test: ['.test/']
         }
