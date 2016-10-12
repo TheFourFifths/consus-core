@@ -1,7 +1,7 @@
 {
   "name": "consus-flux",
   "description": "Flux modules for the Consus project",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "The Four Fiths",
   "contributors": [
     "Jordan Longato",
