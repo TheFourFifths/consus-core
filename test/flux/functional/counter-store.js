@@ -19,7 +19,7 @@ store.registerHandler('RESET', () => {
 
 store.registerHandler('INCREMENT', data => {
     if (typeof data === 'object') {
-        count -= data.amount;
+        count += data.amount;
     } else {
         count += 1;
     }
