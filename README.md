@@ -40,4 +40,3 @@ npm test
 * `docs`: Project documentation goes here
 * `src`: The project's source code
 * `test`: The project's tests
-    * `unit`: Unit tests
