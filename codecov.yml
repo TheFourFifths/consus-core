@@ -10,4 +10,4 @@ coverage:
         attachments: "diff, sunburst"
 
 fixes:
-  - ".dist/lib/::src/lib/"
+  - ".dist/::src/"

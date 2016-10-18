@@ -1,10 +1,12 @@
 import sinon from 'sinon';
 import { assert } from 'chai';
-import Dispatcher from '../../../.dist/lib/dispatcher';
+import { Dispatcher } from '../../../flux';
 
 describe('Dispatcher', () => {
 
-    beforeEach(Dispatcher.reset);
+    beforeEach(() => {
+        Dispatcher.reset();
+    });
 
     describe('#register', () => {
 
@@ -38,6 +40,7 @@ describe('Dispatcher', () => {
         it('should not call a listener twice with one action', () => {
             let spy = sinon.spy();
             let token = Dispatcher.register(spy);
+            Dispatcher.currentAction = {};
             Dispatcher.callListener(token);
             assert.isTrue(spy.calledOnce);
             Dispatcher.callListener(token);
@@ -62,6 +65,7 @@ describe('Dispatcher', () => {
         it('should skip a listener that has been called', () => {
             let spy = sinon.spy();
             let token = Dispatcher.register(spy);
+            Dispatcher.currentAction = {};
             Dispatcher.callListener(token);
             assert.isTrue(spy.calledOnce);
             Dispatcher.waitFor(token);
