@@ -1,3 +1,4 @@
 module.exports = {
-    flux: require('./flux');
+    flux: require('./flux'),
+    identifiers: require('./identifiers')
 };
