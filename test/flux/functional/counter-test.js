@@ -1,6 +1,6 @@
 import { assert } from 'chai';
 import sinon from 'sinon';
-import { Dispatcher } from '../../.dist/index';
+import { Dispatcher } from '../../../flux';
 import CounterStore from './counter-store';
 
 describe('Counter', () => {

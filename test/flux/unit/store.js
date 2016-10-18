@@ -1,5 +1,5 @@
 import { assert } from 'chai';
-import Store from '../../../.dist/lib/store';
+import { Store } from '../../../flux';
 
 describe('Store', () => {
 

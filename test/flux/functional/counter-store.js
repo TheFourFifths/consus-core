@@ -1,4 +1,4 @@
-import { Store } from '../../.dist/index';
+import { Store } from '../../../flux';
 
 let count = 0;
 
