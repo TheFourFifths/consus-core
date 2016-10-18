@@ -1,7 +1,7 @@
 {
   "name": "consus-core",
   "description": "Common modules for the Consus project",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "author": "The Four Fifths",
   "contributors": [
     "Jordan Longato",
