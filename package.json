@@ -1,8 +1,8 @@
 {
-  "name": "consus-flux",
-  "description": "Flux modules for the Consus project",
-  "version": "0.2.0",
-  "author": "The Four Fiths",
+  "name": "consus-core",
+  "description": "Common modules for the Consus project",
+  "version": "0.5.0",
+  "author": "The Four Fifths",
   "contributors": [
     "Jordan Longato",
     "Matthew Mahnke",
@@ -11,27 +11,28 @@
     "Trevin Hofmann <trevinhofmann@gmail.com>"
   ],
   "license": "Unlicense",
-  "main": ".dist/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "grunt build",
-    "coverage": "cross-env NODE_ENV=test BABEL_ENV=test nyc npm test && nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "coverage": "cross-env NODE_ENV=test BABEL_ENV=test nyc npm test && nyc report --reporter=text-lcov > coverage.lcov",
     "prepublish": "grunt prepublish",
     "test": "grunt test",
     "lint": "grunt lint"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheFourFifths/consus-flux"
+    "url": "https://github.com/TheFourFifths/consus-core"
   },
   "bugs": {
-    "url": "https://github.com/TheFourFifths/consus-flux/issues"
+    "url": "https://github.com/TheFourFifths/consus-core/issues"
   },
   "keywords": [
     "consus",
-    "flux",
+    "core",
     "the four fifths"
   ],
   "devDependencies": {
+    "babel-eslint": "^7.0.0",
     "babel-plugin-istanbul": "^2.0.1",
     "babel-preset-es2015": "^6.16.0",
     "babel-register": "^6.16.3",
@@ -42,9 +43,12 @@
     "grunt-babel": "^6.0.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
     "grunt-mocha-cli": "^2.1.0",
     "nyc": "^8.3.0",
     "sinon": "^1.17.6"
+  },
+  "dependencies": {
+    "bs58": "^3.0.0"
   }
 }

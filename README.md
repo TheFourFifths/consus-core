@@ -1,78 +1,42 @@
-# consus-flux
+# consus-core
 
-[![Build Status](https://travis-ci.org/TheFourFifths/consus-flux.svg?branch=master)](https://travis-ci.org/TheFourFifths/consus-flux)
-[![codecov](https://codecov.io/gh/TheFourFifths/consus-flux/branch/master/graph/badge.svg)](https://codecov.io/gh/TheFourFifths/consus-flux)
+[![Build Status](https://travis-ci.org/TheFourFifths/consus-core.svg?branch=dev)](https://travis-ci.org/TheFourFifths/consus-core)
+[![codecov](https://codecov.io/gh/TheFourFifths/consus-core/branch/dev/graph/badge.svg)](https://codecov.io/gh/TheFourFifths/consus-core)
+[![npm](https://img.shields.io/npm/v/consus-core.svg)](https://www.npmjs.com/package/consus-core)
+[![devDependency Status](https://david-dm.org/TheFourFifths/consus-core/dev-status.svg)](https://david-dm.org/TheFourFifths/consus-core?type=dev)
 
-Flux modules for the Consus project
+Common modules for the Consus project
 
 ## Installing
 
-`npm install consus-flux --save`
-
-## Using the Dispatcher
-
-```javascript
-import { Dispatcher } from 'consus-flux';
-
-Dispatcher.handleAction({
-    actionType: 'INCREMENT',
-    data: {
-        amount: 5
-    }
-});
-```
-
-## Using the Store
-
-```javascript
-import { Store } from 'consus-flux';
-
-let count = 0;
-
-class CounterStore extends Store {
-
-    getCount() {
-        return count;
-    }
-
-}
-
-const store = new CounterStore();
-
-store.registerHandler('INCREMENT', data => {
-    count += data.amount;
-    store.emitChange();
-});
-
-store.registerHandler('DECREMENT', data => {
-    count -= data.amount;
-    store.emitChange();
-});
-
-export default store;
-```
-
-## Listening to a Store
-
-```javascript
-import CounterStore from './counter-store';
-
-function handleChange() {
-    console.log('The count is now: ' + CounterStore.getCount());
-}
-
-CounterStore.addChangeListener(handleChange);
-
-setTimeout(() {
-    CounterStore.removeChangeListener(handleChange);
-}, 10000);
-```
+`npm install consus-core --save`
 
 ## Developing
 
-# Development scripts
+### Getting Started
+
+```bash
+# Clone the repository
+git clone git@github.com:TheFourFifths/consus-core.git
+# Enter the project directory
+cd consus-core
+# Install dependencies
+npm install
+# Build the project
+npm run build
+# Run the test suite
+npm test
+```
+
+### Development Scripts
 
 * `npm test`: Run the test suite
 * `npm run lint`: Run the linter
 * `npm run build`: Build the usable `.dist` directory
 * `npm run coverage`: Generate a code coverage report
+
+### Project File Structure
+
+* `docs`: Project documentation goes here
+* `src`: The project's source code
+* `test`: The project's tests

@@ -25,38 +25,36 @@ module.exports = function(grunt) {
                 ]
             }
         },
-        jshint: {
+        eslint: {
             options: {
-                jshintrc: '.jshintrc'
+                configFile: '.eslintrc.json'
             },
-            uses_defaults: [
-                'src/**/*.js',
-                'test/**/*.js'
-            ]
+            src: ['src/**/*.js', 'test/**/*.js']
         },
         mochacli: {
             options: {
                 reporter: 'spec'
             },
-            unit: {
+            all: {
                 files: {
-                    src: ['.test/unit/**/*.js']
+                    src: ['.test/**/*.js']
                 }
-            }
+            },
         },
         clean: {
+            coverage: ['coverage/', 'coverage.lcov', '.nyc_output/'],
             dist: ['.dist/'],
             test: ['.test/']
         }
     });
 
     grunt.loadNpmTasks('grunt-babel');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-eslint');
     grunt.loadNpmTasks('grunt-mocha-cli');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     grunt.registerTask('build', ['clean:dist', 'babel:dist']);
-    grunt.registerTask('lint', ['jshint']);
+    grunt.registerTask('lint', ['eslint']);
     grunt.registerTask('test', ['lint', 'build', 'clean:test', 'babel:test', 'mochacli']);
     grunt.registerTask('prepublish', ['test', 'clean:dist', 'babel:dist']);
 
