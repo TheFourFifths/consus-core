@@ -51,7 +51,7 @@ function handleChange() {
 
 CounterStore.addChangeListener(handleChange);
 
-setTimeout(() {
+setTimeout(() => {
     CounterStore.removeChangeListener(handleChange);
 }, 10000);
 ```
