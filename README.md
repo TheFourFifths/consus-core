@@ -11,6 +11,12 @@ Common modules for the Consus project
 
 `npm install consus-core --save`
 
+## Submodules
+
+* [Clone](docs/clone.md)
+* [Flux](docs/flux.md)
+* [Identifiers](docs/identifiers.md)
+
 ## Developing
 
 ### Getting Started
