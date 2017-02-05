@@ -46,7 +46,7 @@ export function createAddress(index, type) {
  */
 export function readAddress(address) {
     let type = address.slice(0, 1);
-    let result = new Object(null);
+    let result = Object.create(null);
     if (type === 'm') {
         result.type = 'model';
     } else if (type === 'i') {
